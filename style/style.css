@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background: url(../images/banner/bg.svg) no-repeat center;
+  background-size: cover;
+}
+
+header {
+  color: #ffffff;
+  padding: 20px 0px;
+}
+
+/* Common classes */
+
+.sec-heading {
+  text-align: center;
+}
+
+.container {
+  max-width: 1125px;
+  min-width: 200px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.text-break {
+  display: block;
+}
+
+.sec-heading h2 {
+  text-align: center;
+}
+
+.sec-heading p {
+  text-align: center;
+}
+
+/* header start */
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-wrapper nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header-wrapper nav > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* header end */
+
+/* banner start */
+
+.banner-wrapper {
+  text-align: center;
+}
+
+.banner-wrapper h1 {
+  font-size: 50px;
+}
+
+.banner-wrapper p {
+  margin: 40px 0px 64px 0px;
+}
+
+.banner-wrapper a {
+  display: inline-flex;
+  background-color: #231a36;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 20px 30px;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* banner end */
+
+/* clints start */
+.clints h6 {
+  color: #b2b7be;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clints-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* clints end */
+
+/* solution start */
+
+.solution {
+  padding: 100px 0px;
+}
+
+.solution .container {
+  max-width: 750px;
+}
+
+.solution-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.solution-wrapper > div {
+  width: 50%;
+}
+
+.solution-wrapper > div:nth-child(2) {
+  text-align: end;
+}
+
+/* solution end */
+
+@media only screen and (min-width: 768px) {
+  .solution > div > div:nth-child(2) > div:nth-child(1) {
+    order: 2;
+  }
+
+  .solution > div > div:nth-child(2) > div:nth-child(2) {
+    order: 1;
+    text-align: start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clints-wrapper > div {
+    width: 33.3%;
+    text-align: center;
+  }
+
+  .solution .container > div:nth-child(2) > div:nth-child(1) {
+    order: 1;
+  }
+
+  .solution .container > div:nth-child(2) > div:nth-child(2) {
+    order: 2;
+  }
+
+  .solution .container > div:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .solution-wrapper {
+    flex-direction: column;
+  }
+
+  .solution-wrapper > div:nth-child(2) {
+    text-align: center;
+  }
+
+  .solution-wrapper > img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .text-break {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
